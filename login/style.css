@@ -1,0 +1,75 @@
+/* Selettore di tutta la pagina */
+html, body {
+  /* Font senza 'serif', più leggibile su uno schermo */
+  font-family: sans-serif;
+  background-color: #C02020;
+
+  /* Massima larghezza del contenuto (perché non si allarghi troppo) */
+  max-width: 1024px;
+
+  /* Centra il contenuto */
+  margin: auto;
+  margin-top: 2em;
+}
+
+/* Selettore solo del body (il contenuto) */
+body {
+  width: 85%;
+  background-color: white;
+
+  display: flex;
+  gap: 1em;
+}
+
+#login-form {
+  /* Padding è il bordo interno */
+  padding: 1em;
+  width: 100%;
+}
+
+h1 {
+  text-decoration: underline #B00000 4px;
+  text-underline-offset: .4em;
+  margin-bottom: .5em;
+}
+
+form {
+  margin-top: 2em;
+}
+
+label {
+  /* Label in grassetto */
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+  /* L'input occupa tutta una riga */
+  display: block;
+  margin-bottom: 1em;
+  background-color: #DDDDDD;
+  padding: 1em;
+  border-style: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  margin-top: 1em;
+
+  background-color: #B00000;
+  color: white;
+}
+
+#remember-me {
+  display: inline;
+}
+
+a {
+  display: block;
+  margin-top: 1.5em;
+  color: #CCCCCC;
+  /* Niente sottolineatura */
+  text-decoration: none;
+}
