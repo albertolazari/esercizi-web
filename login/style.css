@@ -1,4 +1,3 @@
-/* Selettore di tutta la pagina */
 html, body {
   /* Font senza 'serif', più leggibile su uno schermo */
   font-family: sans-serif;
@@ -9,32 +8,32 @@ html, body {
 
   /* Centra il contenuto */
   margin: auto;
-  margin-top: 2em;
 }
 
-/* Selettore solo del body (il contenuto) */
 body {
+  margin-top: 4em;
+
+  /* Lascia un piccolo margine ai lati (non occupa tutta la pagina) */
   width: 85%;
+  min-width: 44em;
   background-color: white;
 
+  /* Affianca immagine e 'div' (con tutto il form) */
   display: flex;
-  gap: 1em;
 }
 
-#login-form {
+div {
   /* Padding è il bordo interno */
-  padding: 1em;
+  padding: 2em;
   width: 100%;
 }
 
 h1 {
+  /* Sottolineatura */
   text-decoration: underline #B00000 4px;
+  /* Sottolineatura più staccata */
   text-underline-offset: .4em;
-  margin-bottom: .5em;
-}
-
-form {
-  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 label {
@@ -45,13 +44,20 @@ label {
 input[type="text"],
 input[type="password"],
 input[type="submit"] {
-  /* L'input occupa tutta una riga */
+  /* L'input occupa tutta una riga andando a capo */
   display: block;
   margin-bottom: 1em;
-  background-color: #DDDDDD;
+
+  /* Margine all'interno per fare gli input più grandi */
   padding: 1em;
+  /* Niente bordo */
   border-style: none;
+  background-color: #DDDDDD;
+
+  /* Occupa tutto lo spazio in larghezza */
   width: 100%;
+
+  /* Risolve bug dell'input che supera i margini */
   box-sizing: border-box;
 }
 
@@ -62,11 +68,8 @@ input[type="submit"] {
   color: white;
 }
 
-#remember-me {
-  display: inline;
-}
-
 a {
+  /* Un link per riga (andando a capo) */
   display: block;
   margin-top: 1.5em;
   color: #CCCCCC;

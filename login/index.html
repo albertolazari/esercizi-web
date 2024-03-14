@@ -7,45 +7,43 @@
   <!-- titolo del tab della pagina nel browser -->
   <title>Login</title>
 
-  <!-- link con il file CSS di formattazione -->
+  <!-- file CSS da usare per la formattazione -->
   <link href="style.css" rel="stylesheet" />
 </head>
 
 
 <!-- contenuto della pagina -->
 <body>
-  <img src="images/login.webp" height="450">
+  <img src="images/login.webp" height="470">
 
-  <div id="login-form">
+  <!-- div che serve per raggruppare tutto il resto in un'unica cella del layout flex -->
+  <div>
     <!-- titolo principale della pagina -->
     <h1>Login</h1>
 
     <form>
       <!-- titolo del campo di input -->
-      <!-- l'attributo 'for' ha come valore l'id dell'input a cui <label> fa da titolo -->
-      <label for="username">Username *</label>
+      <label>Username *</label>
       <!-- campo di inserimento dell'username -->
       <!-- l'attributo 'type' indica che tipo di input è -->
-      <!-- l'attributo 'name' serve a tenere traccia del valore inserito, una volta inviato il form (di solito uguale all'attributo 'id') -->
       <!-- l'attributo 'placeholder' inserisce un suggerimento nel campo di testo -->
       <input type="text"
-        id="username" name="username"
         placeholder="Enter your Username">
 
-      <label for="password">Password *</label>
+      <label>Password *</label>
       <input type="password"
-        id="password" name="password"
         placeholder="Enter your Password">
 
-      <input type="checkbox" id="remember-me" name="remember-me">
-      <label for="remember-me">Remember me</label>
+      <input type="checkbox">
+      <label>Remember me</label>
 
       <!-- il tipo 'submit' è un bottone, che serve a inviare i dati -->
+      <!-- l'attributo 'value' è il testo scritto sul bottone -->
       <input type="submit" value="LOGIN">
 
     </form>
 
-    <!-- link di aiuto (href è vuoto perché non c'è la pagina a cui rimanda il link) -->
+    <!-- link (href è vuoto perché non c'è la pagina a cui rimanda il link) -->
     <a href="">Forgot password?</a>
     <a href="">Don't have an account?</a>
 
